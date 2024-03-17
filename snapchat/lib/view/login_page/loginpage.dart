@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:snapchat/core/constants/color_constants.dart';
 import 'package:snapchat/global_widgets/custom_button.dart';
 import 'package:snapchat/global_widgets/custom_textfield.dart';
+import 'package:snapchat/view/bottom_navigation/bottom_navigation.dart';
+import 'package:snapchat/view/homepage/hompage.dart';
 
 class Login_page extends StatelessWidget {
   const Login_page({super.key});
@@ -78,6 +80,13 @@ class Login_page extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 110),
             child: CustomButton(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BottomNavigation_screen(),
+                    ));
+              },
               text: "LOG IN",
               horizontalPadding: 30,
               verticalPadding: 15,

@@ -12,5 +12,7 @@ class ColorConstants {
 
   // Home screen
   static const Color buttonBlue = Color(0xff1E88E5);
+  static const Color white = Color(0xffC4C4C4);
   static const Color normalYellow = Colors.yellow;
+  static const Color primaypink = Color(0xffC837AB);
 }
